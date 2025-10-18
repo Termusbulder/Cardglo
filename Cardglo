@@ -62,31 +62,34 @@ colors = [
     "\033[0;101m", "\033[1;101m", "\033[0;102m", "\033[1;102m", "\033[0;104m", "\033[1;104m",
     "\033[0;105m", "\033[1;105m", "\033[0;106m", "\033[1;106m"
 ]
-#-------------------// APPROVAL \\---------------------#
-import os, httpx, time
-
-
-sexkey = "Emmanuelx("+str(os.getuid())+"=(MODz)="+str(os.getuid())+")007"
-
-def approval():
-    sexkey = "Emmanuelx("+str(os.getuid())+"=(MODz)="+str(os.getuid())+")007"
-    try:
-        ress = httpx.get("https://github.com/Ola1i2/APPROVAL-blob-main-.git").text
-        if sexkey in ress:
-            sarfraz()
-        else:
-            print("\033[1;97m KEY IS NOT APPROVED")
-            os.system("clear")
-            print(logo)
-           
-            print('\033[1;97m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[1;97m')
-            input(f'\033[1;97m(\033[1;97m✘\033[1;97m)\033[1;97m PRESS ENTER TO SEND KEY ADMIN > ')
-            time.sleep(2)
-            tks = sexkey
-            os.system('xdg-open https://wa.me/+2348106877347')
-    except Exception as e:
-        print(f"\033[1;97m Error: {e}")
-version = '1.5'
+def Subscraption():
+	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
+	clear()
+	print(logo)
+	r1=requests.get("https://github.com/Ola1i2/APPROVAL-blob-main-.git").text
+	if key1 in r1:
+		os.system('clear')
+		print(logo)
+		Main()
+	else:
+		os.system("clear")
+		print(logo)
+		print("\t \033[1;32m First Get Approvel\033[1;37m ")
+		time.sleep(1)
+		os.system("clear")
+		print(logo)
+		print ("")
+		print(" \033[1;32m AHAD Toll Paid You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m Note : Paid Tolls Free  HA JANI LOG \033[1;37m")
+		print ("")
+		print(" Your Key is Not Approved ")
+		print("")
+		print(" Copy And Send Key To Admin")
+		print ("")
+		print (" Your Key : "+ak+ahsan+key1)
+		print ("")
+		name = input(" Your Name : ")
+		print ("")
 #---------------------------| Loop |---------------------------#
 id,id2,loop,ok,cp=[],[],0,0,0;user=[];total_hits = 0
 #---------------------------| Linex |---------------------------#
