@@ -1,8 +1,7 @@
 """
     @ code by ---( Younis john )---
-    @ Github : https://github.com/YounisXyz
-    @ Telegram : https://t.me/Younis_Xyz
-    @ WhatsApp : +923194999455
+    @ Github : https://github.com/Termusbulder.com
+    @ WhatsApp : 2348106877347
     
 """
 import requests,bs4,json,uuid,os,sys,random,datetime,time,re,urllib3,base64,string,platform,httpx,mechanize,rich,json,subprocess
@@ -77,8 +76,8 @@ logo=(f'''\033[1;97m
 
 \033[1;90m{15 * '⎯⎯⎯'}
 \033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool Owner  \033[1;90m➤\033[1;97m  MUHAMMAD YOUNIS 
-\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m WhatsApp    \033[1;90m➤\033[1;97m  +923194999455
-\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool        \033[1;90m➤\033[1;97m  OLD FREE 🔥
+\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m WhatsApp    \033[1;90m➤\033[1;97m 2348106877347
+\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool        \033[1;90m➤\033[1;97m  OLD paid 🔥
 \x1b[1;90m{15 * '⎯⎯⎯'}''')
 
 
