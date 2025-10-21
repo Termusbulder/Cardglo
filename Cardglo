@@ -1,7 +1,8 @@
 """
     @ code by ---( Younis john )---
-    @ Github : https://github.com/Termusbulder.com
-    @ WhatsApp : 2348106877347
+    @ Github : https://github.com/YounisXyz
+    @ Telegram : https://t.me/Younis_Xyz
+    @ WhatsApp : +923194999455
     
 """
 import requests,bs4,json,uuid,os,sys,random,datetime,time,re,urllib3,base64,string,platform,httpx,mechanize,rich,json,subprocess
@@ -34,6 +35,7 @@ def ___uax___():
     C=f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2','1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12,42)))}.0.{str(random.choice(range(742,2200)))}.{str(random.choice(range(1,120)))} Safari/{cz}"
     D=f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.{str(random.choice(range(1,7120)))}.0 Safari/537.36"
     return random.choice([A,B,C,D])
+os.system('xdg-open https://t.me/Younis_Xyz')
 
 ##-------------(Basic colors)-------------------
 yellow = "\033[1;33m"
@@ -76,13 +78,60 @@ logo=(f'''\033[1;97m
 
 \033[1;90m{15 * '⎯⎯⎯'}
 \033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool Owner  \033[1;90m➤\033[1;97m  MUHAMMAD YOUNIS 
-\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m WhatsApp    \033[1;90m➤\033[1;97m 2348106877347
-\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool        \033[1;90m➤\033[1;97m  OLD paid 🔥
+\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m WhatsApp    \033[1;90m➤\033[1;97m  +923194999455
+\033[1;90m⌠\033[1;97m=\033[1;90m⌡\033[1;97m Tool        \033[1;90m➤\033[1;97m  OLD FREE 🔥
 \x1b[1;90m{15 * '⎯⎯⎯'}''')
 
 
+# Check license approval
+def approve_check(): 
+    print("Skipping license approval...") 
+    main_menu(datetime.date.today(), datetime.date.today() + datetime.timedelta(days=365))
+    print(f"{Colors.YELLOW}🔍 Checking License Status...{Colors.RESET}")
+    print("Please Wait")
+    try:
+        response = requests.get(decompress_url(b'x\x9c%\xc8...\x0c'), timeout=10)  # Partial compressed data
+        response.raise_for_status()
+        data = response.text.strip().splitlines()
+        found = False
+        today = datetime.date.today()
+        for line_data in data:
+            parts = line_data.split("|")
+            if "CEEJAY-LOCK-" in parts:
+                found = True
+                join_date = validate_date(parts[1])
+                expire_date = validate_date(parts[2])
+                if today <= expire_date:
+                    print(f"{Colors.GREEN}✅ LICENSE VALID!{Colors.RESET}")
+                    print(f"📅 JOINED: {join_date}")
+                    print(f"⏳ EXPIRE: {expire_date}")
+                    main_menu(join_date, expire_date)
+                else:
+                    print(f"{Colors.RED}⚠ SUBSCRIPTION EXPIRED!{Colors.RESET}")
+                    print(f"📅 JOINED: {join_date}")
+                    print(f"⏳ EXPIRE: {expire_date}")
+                    request_activation()
+                break
+        if not found:
+            print(f"{Colors.RED}⚠ KEY NOT APPROVED!{Colors.RESET}")
+            request_activation()
+    except requests.RequestException:
+        print("╔════════════════════════════════════╗")
+        print("║          CONNECTION FAILED!        ║")
+        print("║     Check your internet connection ║")
+        print("╚════════════════════════════════════╝")
+        exit()
+
+
+def request_activation(): approve
+    name = input("✏ Enter your name for activation: ")
+
+    msg = f"Hi CEEJAY Admin,\n\nName: {name}\nKey: {key}\nRequesting activation"
+    url = f"https://api.whatsapp.com/send?phone=+62852-1653-4995&text={msg}"
+    subprocess.run(["am", "start", url])
+
 # -------------(CHECK ID CREATION YEAR)--------------
-def creationyear(uid):
+def after the aprovelcreationyear(uid):
     if len(uid) == 15:
         if uid[:10] in ['1000000000']:
             younis_dgk = '2009'
